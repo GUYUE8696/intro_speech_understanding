@@ -65,7 +65,6 @@ def synthesize_vowel(duration,F0,F1,F2,F3,F4,BW1,BW2,BW3,BW4,Fs):
     excitation = voiced_excitation(duration, F0, Fs)
     y1 = resonator(excitation, F1, BW1, Fs)
     y2 = resonator(y1, F2, BW2, Fs)
-    y3 = resonator(y2, F3, BW3, Fs)
-    speech = resonator(y3, F4, BW4, Fs)
+    
     return speech
     
