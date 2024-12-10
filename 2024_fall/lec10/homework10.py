@@ -54,6 +54,6 @@ def stft_to_spectrogram(stft):
     '''
     #raise RuntimeError("You need to change this part")
     mstft = np.abs(stft)
-    return 20*np.log10(np.maximum( 0.001,mstft / np.amax(mstft) ) )
+    return 20*np.log10( np.maximum( 0.001, mstft / np.amax(mstft) ) )
 
 
